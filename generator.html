@@ -26,7 +26,7 @@
     <h1>JSON Generator</h1>
     <form id="jsonForm">
         <label for="categoryName">Category Name:</label>
-        <input type="text" id="categoryName" required>
+        <input type="text" id="categoryName" required value="zvbt's Hydra Collection | ">
 
         <label for="gameName">Game Name:</label>
         <input type="text" id="gameName" required>
@@ -54,7 +54,7 @@
             const fileSize = document.getElementById('fileSize').value;
 
             const json = {
-                name: `zvbt's Hydra Collection | ${categoryName}`,
+                name: `${categoryName}`,
                 downloads: [
                     {
                         title: gameName,
