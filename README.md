@@ -4,6 +4,8 @@ Simple NodeJS web server to generate & host [Hydra launcher](https://github.com/
 
 ## Usage
 
+The json generator is located here https://hydra.zvbt.space/ (You need to import it manually in the [hydra.json](/hydra.json) file.)
+
 Import `https://hydra.zvbt.space/collection` to your download sources in the settings
 
 ![image](https://github.com/zvbt/hydra-collection/assets/61088560/4d4ce696-3dc1-49b5-9a9c-c8fe26ceef47)
