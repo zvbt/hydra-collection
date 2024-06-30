@@ -8,17 +8,47 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #11111b;
+            color: #cdd6f4;
         }
         label, input {
             display: block;
             margin: 10px 0;
         }
+        label {
+            color: #b4befe;
+        }
+        input {
+            background-color: #11111b;
+            border: 1px solid #b4befe;
+            color: #cdd6f4;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        input::placeholder {
+            color: #7f849c;
+        }
+        button {
+            background-color: #b4befe;
+            color: #11111b;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #b4befe;
+        }
         .output {
             margin-top: 20px;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #b4befe;
+            background-color: #11111b;
+            color: #cdd6f4;
             white-space: pre-wrap;
             word-break: break-all;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -26,16 +56,16 @@
     <h1>Hydra Collection</h1>
     <form id="jsonForm">
         <label for="gameName">Game Name:</label>
-        <input type="text" id="gameName" required>
+        <input type="text" id="gameName" placeholder="Enter game name" required>
 
         <label for="magnetLink">Magnet Link:</label>
-        <input type="url" id="magnetLink" required>
+        <input type="url" id="magnetLink" placeholder="Enter magnet link" required>
 
         <label for="uploadDate">Upload Date:</label>
         <input type="date" id="uploadDate" required>
 
         <label for="fileSize">File Size:</label>
-        <input type="text" id="fileSize" required>
+        <input type="text" id="fileSize" placeholder="Enter file size" required>
 
         <button type="button" onclick="generateJSON()">Generate JSON</button>
         <button type="button" onclick="copyJSON()">Copy to Clipboard</button>
@@ -51,10 +81,10 @@
             const fileSize = document.getElementById('fileSize').value;
 
             const json = {
-                        title: gameName,
-                        uris: [magnetLink],
-                        uploadDate: new Date(uploadDate).toISOString(),
-                        fileSize: fileSize
+                title: gameName,
+                uris: [magnetLink],
+                uploadDate: new Date(uploadDate).toISOString(),
+                fileSize: fileSize
             };
 
             document.getElementById('output').textContent = JSON.stringify(json, null, 2);
@@ -62,7 +92,7 @@
 
         function copyJSON() {
             const output = document.getElementById('output').textContent;
-            navigator.clipboard.writeText(output)
+            navigator.clipboard.writeText(output);
         }
     </script>
 </body>
