@@ -20,7 +20,19 @@ const server = http.createServer((req, res) => {
     } else if (req.url === '/collection') {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        const filePath = path.join(__dirname, 'hydra.json');
+        const filePath = path.join(__dirname, '/data/hydra.json');
+        fs.readFile(filePath, 'utf8', (err, data) => {
+            if (err) {
+                res.statusCode = 500;
+                res.end(JSON.stringify({ error: 'Failed to read file' }));
+                return;
+            }
+            res.end(data);
+        });
+    } else if (req.url === '/adult') {
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        const filePath = path.join(__dirname, '/data/adult.json');
         fs.readFile(filePath, 'utf8', (err, data) => {
             if (err) {
                 res.statusCode = 500;
