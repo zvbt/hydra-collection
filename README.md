@@ -12,6 +12,3 @@ Import `https://hydra.zvbt.space/collection` to your download sources in the set
 
 Now if you go to download options you should see my Hydra collection
 ![image](https://github.com/zvbt/hydra-collection/assets/61088560/bd5101ff-3439-4fb5-8140-ecdfba98df84)
-
-#
-This is just an example. I probably will not keep this list updated.
