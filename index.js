@@ -6,7 +6,6 @@ const port = 3038;
 
 const server = http.createServer((req, res) => {
     if (req.url === '/') {
-        // json generator
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/html');
         const filePath = path.join(__dirname, 'generator.html');
@@ -19,7 +18,6 @@ const server = http.createServer((req, res) => {
             res.end(data);
         });
     } else if (req.url === '/collection') {
-        // nudity collection
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
         const filePath = path.join(__dirname, 'hydra.json');
@@ -32,7 +30,6 @@ const server = http.createServer((req, res) => {
             res.end(data);
         });
     } else {
-        // Handle 404 for other routes
         res.statusCode = 404;
         res.setHeader('Content-Type', 'text/plain');
         res.end('404 Not Found');
