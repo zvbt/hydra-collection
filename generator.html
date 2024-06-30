@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <h1>JSON Generator</h1>
+    <form id="jsonForm">
+        <label for="categoryName">Category Name:</label>
+        <input type="text" id="categoryName" required>
+
+        <label for="gameName">Game Name:</label>
+        <input type="text" id="gameName" required>
+
+        <label for="magnetLink">Magnet Link:</label>
+        <input type="url" id="magnetLink" required>
+
+        <label for="uploadDate">Upload Date:</label>
+        <input type="date" id="uploadDate" required>
+
+        <label for="fileSize">File Size:</label>
+        <input type="text" id="fileSize" required>
+
+        <button type="button" onclick="generateJSON()">Generate JSON</button>
+    </form>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        function generateJSON() {
+            const categoryName = document.getElementById('categoryName').value;
+            const gameName = document.getElementById('gameName').value;
+            const magnetLink = document.getElementById('magnetLink').value;
+            const uploadDate = document.getElementById('uploadDate').value;
+            const fileSize = document.getElementById('fileSize').value;
+
+            const json = {
+                name: `zvbt's Hydra Collection | ${categoryName}`,
+                downloads: [
+                    {
+                        title: gameName,
+                        uris: [magnetLink],
+                        uploadDate: new Date(uploadDate).toISOString(),
+                        fileSize: fileSize
+                    }
+                ]
+            };
+
+            document.getElementById('output').textContent = JSON.stringify(json);
+        }
+    </script>
+</body>
+</html>
