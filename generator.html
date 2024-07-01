@@ -1,99 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hydra Collection</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #11111b;
-            color: #cdd6f4;
-        }
-        label, input {
-            display: block;
-            margin: 10px 0;
-        }
-        label {
-            color: #b4befe;
-        }
-        input {
-            background-color: #11111b;
-            border: 1px solid #b4befe;
-            color: #cdd6f4;
-            padding: 8px;
-            border-radius: 4px;
-        }
-        input::placeholder {
-            color: #7f849c;
-        }
-        button {
-            background-color: #b4befe;
-            color: #11111b;
-            border: none;
-            padding: 10px 20px;
-            margin: 10px 0;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        button:hover {
-            background-color: #b4befe;
-        }
-        .output {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #b4befe;
-            background-color: #11111b;
-            color: #cdd6f4;
-            white-space: pre-wrap;
-            word-break: break-all;
-            border-radius: 4px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Hydra Collection</h1>
-    <form id="jsonForm">
-        <label for="gameName">Game Name:</label>
-        <input type="text" id="gameName" placeholder="Enter game name" required>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hydra Collection</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #11111b;
+                color: #cdd6f4;
+            }
+            label,
+            input {
+                display: block;
+                margin: 10px 0;
+            }
+            label {
+                color: #b4befe;
+            }
+            input {
+                background-color: #11111b;
+                border: 1px solid #b4befe;
+                color: #cdd6f4;
+                padding: 8px;
+                border-radius: 4px;
+            }
+            input::placeholder {
+                color: #7f849c;
+            }
+            button {
+                background-color: #b4befe;
+                color: #11111b;
+                border: none;
+                padding: 10px 20px;
+                margin: 10px 0;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+            button:hover {
+                background-color: #b4befe;
+            }
+            .output {
+                margin-top: 20px;
+                padding: 10px;
+                border: 1px solid #b4befe;
+                background-color: #11111b;
+                color: #cdd6f4;
+                white-space: pre-wrap;
+                word-break: break-all;
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hydra Collection</h1>
+        <form id="jsonForm">
+            <label for="gameName">Game Name:</label>
+            <input
+                type="text"
+                id="gameName"
+                placeholder="Enter game name"
+                required
+            />
 
-        <label for="magnetLink">Magnet Link:</label>
-        <input type="url" id="magnetLink" placeholder="Enter magnet link" required>
+            <label for="magnetLink">Magnet Link:</label>
+            <input
+                type="url"
+                id="magnetLink"
+                placeholder="Enter magnet link"
+                required
+            />
 
-        <label for="uploadDate">Upload Date:</label>
-        <input type="date" id="uploadDate" required>
+            <label for="uploadDate">Upload Date:</label>
+            <input type="date" id="uploadDate" required />
 
-        <label for="fileSize">File Size:</label>
-        <input type="text" id="fileSize" placeholder="Enter file size" required>
+            <label for="fileSize">File Size:</label>
+            <input
+                type="text"
+                id="fileSize"
+                placeholder="Enter file size"
+                required
+            />
 
-        <button type="button" onclick="generateJSON()">Generate JSON</button>
-        <button type="button" onclick="copyJSON()">Copy to Clipboard</button>
-    </form>
+            <button type="button" onclick="generateJSON()">
+                Generate JSON
+            </button>
+            <button type="button" onclick="copyJSON()">
+                Copy to Clipboard
+            </button>
+        </form>
 
-    <div class="output" id="output"></div>
+        <div class="output" id="output"></div>
 
-    <script>
-        function generateJSON() {
-            const gameName = document.getElementById('gameName').value;
-            const magnetLink = document.getElementById('magnetLink').value;
-            const uploadDate = document.getElementById('uploadDate').value;
-            const fileSize = document.getElementById('fileSize').value;
+        <script>
+            function generateJSON() {
+                const gameName = document.getElementById("gameName").value;
+                const magnetLink = document.getElementById("magnetLink").value;
+                const uploadDate = document.getElementById("uploadDate").value;
+                const fileSize = document.getElementById("fileSize").value;
 
-            const json = {
-                title: gameName,
-                uris: [magnetLink],
-                uploadDate: new Date(uploadDate).toISOString(),
-                fileSize: fileSize
-            };
+                const json = {
+                    title: gameName,
+                    uris: [magnetLink],
+                    uploadDate: new Date(uploadDate).toISOString(),
+                    fileSize: fileSize,
+                };
 
-            document.getElementById('output').textContent = JSON.stringify(json, null, 2);
-        }
+                document.getElementById("output").textContent = JSON.stringify(
+                    json,
+                    null,
+                    2
+                );
+            }
 
-        function copyJSON() {
-            const output = document.getElementById('output').textContent;
-            navigator.clipboard.writeText(output);
-        }
-    </script>
-</body>
+            function copyJSON() {
+                const output = document.getElementById("output").textContent;
+                navigator.clipboard.writeText(output);
+            }
+        </script>
+    </body>
 </html>
