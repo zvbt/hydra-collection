@@ -44,10 +44,34 @@
         {
             "title": "Resident Evil Village",
             "uris": [
-              "magnet:?xt=urn:btih:0918F78C19B4184FE785FBFC48F05D6881FDEAE7&amp;dn=Resident.Evil.Village-EMPRESS&amp;tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce"
+                "magnet:?xt=urn:btih:0918F78C19B4184FE785FBFC48F05D6881FDEAE7&amp;dn=Resident.Evil.Village-EMPRESS&amp;tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&amp;tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce"
             ],
             "uploadDate": "2021-07-10T00:00:00.000Z",
             "fileSize": "27.4 GB"
-          }
+        },
+        {
+            "title": "Ghostrunner 2",
+            "uris": [
+                "magnet:?xt=urn:btih:431233924bf3e4853cab2f4e18d7089fb137d3e1&amp;dn=Ghostrunner_2-FLT&amp;tr=udp://tracker.torrent.eu.org:451/announce&amp;tr=udp://exodus.desync.com:6969/announce&amp;tr=udp://tracker.moeking.me:6969/announce&amp;tr=udp://tracker.opentrackr.org:1337/announce&amp;tr=udp://open.stealth.si:80/announce&amp;tr=udp://tracker.theoks.net:6969/announce&amp;tr=udp://movies.zsw.ca:6969/announce&amp;tr=udp://tracker-udp.gbitt.info:80/announce&amp;tr=udp://tracker.tiny-vps.com:6969/announce&amp;tr=http://tracker.gbitt.info:80/announce&amp;tr=http://tracker.ccp.ovh:6969/announce&amp;tr=https://tracker.gbitt.info:443/announce&amp;tr=udp://tracker.dler.com:6969/announce&amp;tr=udp://tracker.ccp.ovh:6969/announce&amp;tr=http://tracker.bt4g.com:2095/announce"
+            ],
+            "uploadDate": "2023-10-26T00:00:00.000Z",
+            "fileSize": "32.72 GB"
+        },
+        {
+            "title": "Knowledge or know Lady",
+            "uris": [
+                "magnet:?xt=urn:btih:4256b8a9dd89e7859b8cb84701c809f82651d204&amp;dn=Knowledge.or.know.Lady-TENOKE&amp;tr=udp://tracker.torrent.eu.org:451/announce&amp;tr=udp://exodus.desync.com:6969/announce&amp;tr=udp://tracker.moeking.me:6969/announce&amp;tr=udp://tracker.opentrackr.org:1337/announce&amp;tr=udp://open.stealth.si:80/announce&amp;tr=udp://tracker.theoks.net:6969/announce&amp;tr=udp://movies.zsw.ca:6969/announce&amp;tr=udp://tracker-udp.gbitt.info:80/announce&amp;tr=udp://tracker.tiny-vps.com:6969/announce&amp;tr=http://tracker.gbitt.info:80/announce&amp;tr=http://tracker.ccp.ovh:6969/announce&amp;tr=https://tracker.gbitt.info:443/announce&amp;tr=udp://tracker.dler.com:6969/announce&amp;tr=udp://tracker.ccp.ovh:6969/announce&amp;tr=http://tracker.bt4g.com:2095/announce"
+            ],
+            "uploadDate": "2024-03-28T00:00:00.000Z",
+            "fileSize": "20.11 GB"
+        },
+        {
+            "title": "Noita",
+            "uris": [
+                "magnet:?xt=urn:btih:d0f6542261dc5bf7e3be8435dcd0619196f73f24&#038;dn=Noita_build_20231221-DINOByTES&#038;tr=udp://tracker.torrent.eu.org:451/announce&#038;tr=udp://exodus.desync.com:6969/announce&#038;tr=udp://tracker.moeking.me:6969/announce&#038;tr=udp://tracker.opentrackr.org:1337/announce&#038;tr=udp://open.stealth.si:80/announce&#038;tr=udp://tracker.theoks.net:6969/announce&#038;tr=udp://movies.zsw.ca:6969/announce&#038;tr=udp://tracker-udp.gbitt.info:80/announce&#038;tr=udp://tracker.tiny-vps.com:6969/announce&#038;tr=http://tracker.gbitt.info:80/announce&#038;tr=http://tracker.ccp.ovh:6969/announce&#038;tr=https://tracker.gbitt.info:443/announce&#038;tr=udp://tracker.dler.com:6969/announce&#038;tr=udp://tracker.ccp.ovh:6969/announce&#038;tr=http://tracker.bt4g.com:2095/announce"
+            ],
+            "uploadDate": "2023-12-23T00:00:00.000Z",
+            "fileSize": "6.16 GB"
+        }
     ]
 }
